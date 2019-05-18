@@ -2,8 +2,8 @@
 
 from odoo import models, fields, api
 
-# class hospitality-services(models.Model):
-#     _name = 'hospitality-services.hospitality-services'
+# class hospitality_services(models.Model):
+#     _name = 'hospitality_services.hospitality_services'
 
 #     name = fields.Char()
 #     value = fields.Integer()
