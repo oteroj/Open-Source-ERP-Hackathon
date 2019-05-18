@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="hospitality-services.list">
+      <field name="name">hospitality-services list</field>
+      <field name="model">hospitality-services.hospitality-services</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="hospitality-services.action_window">
+      <field name="name">hospitality-services window</field>
+      <field name="res_model">hospitality-services.hospitality-services</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="hospitality-services.action_server">
+      <field name="name">hospitality-services server</field>
+      <field name="model_id" ref="model_hospitality-services_hospitality-services"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="hospitality-services" id="hospitality-services.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="hospitality-services.menu_1" parent="hospitality-services.menu_root"/>
+    <menuitem name="Menu 2" id="hospitality-services.menu_2" parent="hospitality-services.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="hospitality-services.menu_1_list" parent="hospitality-services.menu_1"
+              action="hospitality-services.action_window"/>
+    <menuitem name="Server to list" id="hospitality-services" parent="hospitality-services.menu_2"
+              action="hospitality-services.action_server"/>
+    -->
+  </data>
+</odoo>
