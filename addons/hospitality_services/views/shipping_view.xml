@@ -1,77 +1,35 @@
 <odoo>
   <data>
-    <!-- explicit list view definition -->
-    
+    <!--  explicit list view definition  -->
     <record model="ir.ui.view" id="hospitality_services.list">
       <field name="name">shipping list</field>
       <field name="model">hospitality_services.shipping_service</field>
       <field name="arch" type="xml">
-        <tree>
-          <field name="to_name"/>
-        </tree>
+      <tree>
+        <field name="to_name"/>
+        <field name="to_address_line1"/>
+        <field name="to_city"/>
+        <field name="from_name"/>
+        <field name="from_address_line1"/>
+        <field name="from_city"/>
+        <field name="cost"/>
+      </tree>
       </field>
     </record>
-
-
+    
     <record id="shipping_menu_action" model="ir.actions.act_window">
-        <field name="name">Ship Test</field>
-        <field name="res_model">hospitality_services.shipping_service</field>
-        <field name="view_type">form</field>
-        <field name="view_mode">tree,form</field>
-        <field name="domain">[]</field>
-        <field name="help" type="html">
-            <p class="oe_view_nocontent_create">Create The First Ship
-            </p>
-        </field>
+      <field name="name">Ship Test</field>
+      <field name="res_model">hospitality_services.shipping_service</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="domain">[]</field>
+      <field name="help" type="html">
+      <p class="oe_view_nocontent_create">Create The First Ship </p>
+      </field>
     </record>
 
-    <menuitem id="shipping_menu"
-              name="Shipping"/>
-    <menuitem id="ship_menu"
-              parent="shipping_menu"
-              name="Ship"
-              action="shipping_menu_action"/>
+    <menuitem id="shipping_menu" name="Shipping"/>
+    <menuitem id="ship_menu" parent="shipping_menu" name="Ship" action="shipping_menu_action"/>
 
-    <!-- actions opening views on models -->
-    
-    <!-- <record model="ir.actions.act_window" id="hospitality_services.action_window">
-      <field name="name">hospitality_services window</field>
-      <field name="res_model">hospitality_services.hospitality_services</field>
-      <field name="view_mode">tree,form</field>
-    </record> -->
-   
-
-    <!-- server action to the one above -->
-    
-    <!-- <record model="ir.actions.server" id="hospitality_services.action_server">
-      <field name="name">hospitality_services server</field>
-      <field name="model_id" ref="model_hospitality_services_hospitality_services"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": self._name,
-        }
-      </field>
-    </record> -->
-   
-
-    <!-- Top menu item -->
-    
-    <!-- <menuitem name="Hospitality Services" id="hospitality_services.menu_root"/> -->
-   
-    <!-- menu categories -->
-    
-    <!-- <menuitem name="Menu 1" id="hospitality_services.menu_1" parent="hospitality_services.menu_root"/>
-    <menuitem name="Menu 2" id="hospitality_services.menu_2" parent="hospitality_services.menu_root"/> -->
-   
-    <!-- actions -->
-    
-    <!-- <menuitem name="List" id="hospitality_services.menu_1_list" parent="hospitality_services.menu_1"
-              action="hospitality_services.action_window"/>
-    <menuitem name="Server to list" id="hospitality_services" parent="hospitality_services.menu_2"
-              action="hospitality_services.action_server"/> -->
-   
   </data>
 </odoo>
