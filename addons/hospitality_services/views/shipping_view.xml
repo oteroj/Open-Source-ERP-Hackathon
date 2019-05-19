@@ -18,7 +18,7 @@
     </record>
     
     <record id="shipping_menu_action" model="ir.actions.act_window">
-      <field name="name">Ship Test</field>
+      <field name="name">Hotel Hub Shipping</field>
       <field name="res_model">hospitality_services.shipping_service</field>
       <field name="view_type">form</field>
       <field name="view_mode">tree,form</field>

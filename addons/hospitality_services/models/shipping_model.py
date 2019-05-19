@@ -30,7 +30,7 @@ class shipping_service(models.Model):
 
     cost = fields.Float(compute="get_rates", store=True)
     
-
+@api.depends('from_name')
 def get_rates(self):
     payload = {
         "shipment": {
@@ -72,4 +72,4 @@ def get_rates(self):
     for rate in json1_data["rate_response"]["rates"]:
       all_costs.append(float(rate["shipping_amount"]["amount"]))
 
-    cost = (min(all_costs))
+    self.cost = (min(all_costs))

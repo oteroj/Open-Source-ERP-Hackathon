@@ -32,7 +32,7 @@
           </record>
 
           <record id="shipping1" model="hospitality_services.shipping_service">
-            <field name="to_name">Mickey and Minnie Mouse</field>
+            <field name="to_name">Zack Matrin</field>
             <field name="to_address_line1">The Walt Disney Company</field>
             <field name="to_city">Burbank</field>
             <field name="to_state">CA</field>
@@ -45,7 +45,24 @@
             <field name="from_postal_code">10282</field>
             <field name="from_country_code">US</field>
             <field name="weight_value">30.0</field>
+            <field name="cost">9.72</field>
           </record>
-        
+
+          <record id="shipping2" model="hospitality_services.shipping_service">
+            <field name="to_name">Cody Martin</field>
+            <field name="to_address_line1">1201 Market Street</field>
+            <field name="to_city">Philadelphia</field>
+            <field name="to_state">PA</field>
+            <field name="to_postal_code">19107</field>
+            <field name="to_country_code">US</field>
+            <field name="from_name">Jesse Reynolds</field>
+            <field name="from_address_line1">2464 Norman Street</field>
+            <field name="from_city">Los Angeles</field>
+            <field name="from_state">CA</field>
+            <field name="from_postal_code">90017</field>
+            <field name="from_country_code">US</field>
+            <field name="weight_value">30.0</field>
+            <field name="cost">20.7</field>
+          </record>        
     </data>
 </odoo>
