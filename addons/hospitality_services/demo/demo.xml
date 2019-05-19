@@ -28,7 +28,7 @@
 
           <record id="object5" model="hospitality_services.hospitality_services">
             <field name="name">Testing Object</field>
-            <field name="value">40</field>
+            <field name="value">4000</field>
           </record>
 
           <record id="shipping1" model="hospitality_services.shipping_service">
@@ -39,12 +39,30 @@
             <field name="to_postal_code">91521</field>
             <field name="to_country_code">US</field>
             <field name="from_name">Dade Murphy</field>
+            <field name="from_phone">512-485-4282</field>
             <field name="from_address_line1">345 Chambers Street</field>
             <field name="from_city">New York City</field>
             <field name="from_state">NY</field>
             <field name="from_postal_code">10282</field>
             <field name="from_country_code">US</field>
             <field name="weight_value">30.0</field>
+          </record>
+
+          <record id="shipping2" model="hospitality_services.shipping_service">
+            <field name="to_name">Mr. Mosby</field>
+            <field name="to_address_line1">280 Park Ave</field>
+            <field name="to_city">New York City</field>
+            <field name="to_state">NY</field>
+            <field name="to_postal_code">10020</field>
+            <field name="to_country_code">US</field>
+            <field name="from_name">Paris Hilton</field>
+            <field name="from_phone">512-485-4282</field>
+            <field name="from_address_line1">1335 6th Ave</field>
+            <field name="from_city">New York City</field>
+            <field name="from_state">NY</field>
+            <field name="from_postal_code">10019</field>
+            <field name="from_country_code">US</field>
+            <field name="weight_value">100.0</field>
           </record>
         
     </data>
