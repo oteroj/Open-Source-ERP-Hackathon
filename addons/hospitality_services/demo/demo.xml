@@ -25,6 +25,27 @@
             <field name="name">Object 4</field>
             <field name="value">40</field>
           </record>
+
+          <record id="object5" model="hospitality_services.hospitality_services">
+            <field name="name">Testing Object</field>
+            <field name="value">40</field>
+          </record>
+
+          <record id="shipping1" model="hospitality_services.shipping_service">
+            <field name="to_name">Mickey and Minnie Mouse</field>
+            <field name="to_address_line1">The Walt Disney Company</field>
+            <field name="to_city">Burbank</field>
+            <field name="to_state">CA</field>
+            <field name="to_postal_code">91521</field>
+            <field name="to_country_code">US</field>
+            <field name="from_name">Dade Murphy</field>
+            <field name="from_address_line1">345 Chambers Street</field>
+            <field name="from_city">New York City</field>
+            <field name="from_state">NY</field>
+            <field name="from_postal_code">10282</field>
+            <field name="from_country_code">US</field>
+            <field name="weight_value">30.0</field>
+          </record>
         
     </data>
 </odoo>

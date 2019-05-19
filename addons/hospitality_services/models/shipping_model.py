@@ -8,27 +8,27 @@ class shipping_service(models.Model):
     _name = 'hospitality_services.shipping_service'
 
     api_token = 'TEST_/fGYCaXvQ2Ep41DgR2RP6q+PagxOO0hrDwNxwRAFwWQ'
-	api_url_rates = 'https://api.shipengine.com/v1/rates'
-	headers = {'Content-Type': 'application/json', 
+    api_url_rates = 'https://api.shipengine.com/v1/rates'
+    headers = {'Content-Type': 'application/json', 
       'api-key': api_token}
 
     to_name = fields.Char()
     to_address_line1 = fields.Char()
     to_city = fields.Char()
     to_state = fields.Char()
-    to_postal_code = field.Char()
-    to_country_code = field.Char()
-
+    to_postal_code = fields.Char()
+    to_country_code = fields.Char()
+    
     from_name = fields.Char()
     from_address_line1 = fields.Char()
     from_city = fields.Char()
     from_state = fields.Char()
-    from_postal_code = field.Char()
-    from_country_code = field.Char()
+    from_postal_code = fields.Char()
+    from_country_code = fields.Char()
 
     weight_value = fields.Float()
 
-    cost = fields.Float(compute = "get_rates", store = True)
+    cost = fields.Float(compute="get_rates", store=True)
     
 
 def get_rates(self):
