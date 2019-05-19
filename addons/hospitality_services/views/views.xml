@@ -17,7 +17,7 @@
     <!-- actions opening views on models -->
     
     <record model="ir.actions.act_window" id="hospitality_services.action_window">
-      <field name="name">hospitality_services</field>
+      <field name="name">Laundry</field>
       <field name="res_model">hospitality_services.hospitality_services</field>
       <field name="view_mode">tree,form</field>
     </record>
@@ -41,12 +41,12 @@
 
     <!-- Top menu item -->
     
-    <menuitem name="Hospitality Services" id="hospitality_services.menu_root"/>
+    <menuitem name="Hotel Hub" id="hospitality_services.menu_root"/>
    
     <!-- menu categories -->
     
-    <menuitem name="Menu 1" id="hospitality_services.menu_1" parent="hospitality_services.menu_root"/>
-    <menuitem name="Menu 2" id="hospitality_services.menu_2" parent="hospitality_services.menu_root"/>
+    <menuitem name=" " id="hospitality_services.menu_1" parent="hospitality_services.menu_root"/>
+    <menuitem name=" " id="hospitality_services.menu_2" parent="hospitality_services.menu_root"/>
    
     <!-- actions -->
     

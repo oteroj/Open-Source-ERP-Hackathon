@@ -29,8 +29,9 @@ class shipping_service(models.Model):
 
     weight_value = fields.Float()
 
-    cost = fields.Float(compute="_get_rates")
+    cost = fields.Float(compute="_get_rates" store=True)
     
+    @api.one
     @api.depends('to_name', 'to_address_line1', 'to_city', 'to_state', 'to_postal_code', 'to_country_code', 'from_name', 'from_phone',
                 'from_address_line1', 'from_city', 'from_state', 'from_postal_code', 'from_country_code', 'weight_value')
     def _get_rates(self):

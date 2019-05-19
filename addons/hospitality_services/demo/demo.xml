@@ -1,38 +1,32 @@
 <odoo>
     <data>
-        
           <record id="object0" model="hospitality_services.hospitality_services">
-            <field name="name">Object 0</field>
-            <field name="value">0</field>
+            <field name="name">Linens</field>
+            <field name="value">122</field>
           </record>
         
           <record id="object1" model="hospitality_services.hospitality_services">
-            <field name="name">Object 1</field>
-            <field name="value">10</field>
+            <field name="name">Duvets</field>
+            <field name="value">84</field>
           </record>
         
           <record id="object2" model="hospitality_services.hospitality_services">
-            <field name="name">Object 2</field>
-            <field name="value">20</field>
+            <field name="name">Robes</field>
+            <field name="value">32</field>
           </record>
         
           <record id="object3" model="hospitality_services.hospitality_services">
-            <field name="name">Object 3</field>
-            <field name="value">30</field>
-          </record>
-        
-          <record id="object4" model="hospitality_services.hospitality_services">
-            <field name="name">Object 4</field>
-            <field name="value">40</field>
+            <field name="name">Napkins</field>
+            <field name="value">58</field>
           </record>
 
-          <record id="object5" model="hospitality_services.hospitality_services">
-            <field name="name">Testing Object</field>
-            <field name="value">4000</field>
+          <record id="object4" model="hospitality_services.hospitality_services">
+            <field name="name">Curtains</field>
+            <field name="value">12</field>
           </record>
 
           <record id="shipping1" model="hospitality_services.shipping_service">
-            <field name="to_name">Mickey and Minnie Mouse</field>
+            <field name="to_name">Zack Matrin</field>
             <field name="to_address_line1">The Walt Disney Company</field>
             <field name="to_city">Burbank</field>
             <field name="to_state">CA</field>
@@ -64,6 +58,22 @@
             <field name="from_country_code">US</field>
             <field name="weight_value">100.0</field>
           </record>
-        
+
+          <record id="shipping3" model="hospitality_services.shipping_service">
+            <field name="to_name">Cody Martin</field>
+            <field name="to_address_line1">1201 Market Street</field>
+            <field name="to_city">Philadelphia</field>
+            <field name="to_state">PA</field>
+            <field name="to_postal_code">19107</field>
+            <field name="to_country_code">US</field>
+            <field name="from_name">Jesse Reynolds</field>
+            <field name="from_phone">512-485-4282</field>
+            <field name="from_address_line1">2464 Norman Street</field>
+            <field name="from_city">Los Angeles</field>
+            <field name="from_state">CA</field>
+            <field name="from_postal_code">90017</field>
+            <field name="from_country_code">US</field>
+            <field name="weight_value">50.0</field>
+          </record>        
     </data>
 </odoo>
