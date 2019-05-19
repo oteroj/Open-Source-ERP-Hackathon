@@ -67,5 +67,9 @@ def get_rates(self):
         }
     }
     r = requests.post(self.api_url_rates, headers = self.headers, data = json.dumps(payload))
-    print("Get Rates Response")
-    print(r.text)
+    json1_data = json.loads(r.text)
+    all_costs = []
+    for rate in json1_data["rate_response"]["rates"]:
+      all_costs.append(float(rate["shipping_amount"]["amount"]))
+
+    cost = (min(all_costs))
